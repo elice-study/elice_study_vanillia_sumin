@@ -1,0 +1,106 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Open+Sans:wght@400;600&display=swap');
+
+
+body{
+    margin: 35px;
+    background-color: #141414;
+    color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+.header{
+    padding: 2px;
+    height: 130px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__title{
+    height: 50px;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    
+}
+.header__search{
+    width: 270px;
+    height: 50px;
+}
+.header__search input{
+    border: solid 1px #fff;
+    background-color: #141414;
+    opacity: 0.8;
+    -webkit-appearance: none;
+    height: 80%;
+    width: 100%;
+    position: relative;
+    color: #fff;
+}
+
+.header__search__btn{
+    background:none;
+    border: none;
+    color: #fff;
+    
+}
+.header__search__btn button,
+.header__search__btn i{
+    position: absolute;
+    right: 40px;
+    top: 100px;
+
+}
+
+.nav{
+    padding: 2px;
+    margin-bottom: 2px;
+    height: 30px;
+
+    display: flex;
+    
+}
+.nav__company{
+    margin-right: 5px;
+    padding: 5px 10px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+
+    border-radius: 5px;
+}
+.nav__company span{
+    display: block;
+    margin-right: 10px;
+    color: black;
+}
+.nav__company i{
+    color: black;
+}
+.nav__platform{
+    margin-right: 5px;
+    padding: 5px 10px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+
+    border-radius: 5px;
+    opacity: 0.6;
+    
+}
+.nav__platform span{
+    color: black;
+}
+.movies{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.movies__movie {
+    padding: 2px;
+    margin-bottom: 50px;
+}
+.movies__movie img{
+    border-radius: 3px;
+}
