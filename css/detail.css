@@ -1,0 +1,107 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Open+Sans:wght@400;600&display=swap');
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+
+
+body{
+    margin: 50px 20%;
+    min-height: 100vh;
+    color: #fff;
+    background-color: #141414;
+    opacity: 0.8;
+}
+
+header{
+    width: 100%;
+    height: 400px;
+    background-image: url(../img/movie_1.jpg);
+    background-size: 100% 100%;
+    font-family: 'Nanum Myeongjo', serif;
+    font-style: italic;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.header__close{
+    display: flex;
+    justify-content: flex-end;
+}
+.header__close i{
+    margin: 20px 10px 0 0;
+}
+
+.header__row{
+    display: flex;
+    justify-content: flex-start;
+    
+    margin-top: 280px;
+    margin-left: 60px;
+}
+.header__row__title{
+    font-size: 50px;
+}
+.header__row__heart{
+    border: solid 1px #fff;
+    border-radius: 10px;
+    background-color: rgb(20, 20, 20,0.5);
+    
+    width: 60px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top:20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__row__heart i{
+    margin-right: 2px;
+    
+}
+
+
+.main__info{
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    
+    margin: 10px 0;
+    height: 30px;
+    font-size: 20px;
+    color: #bcbcbc;
+}
+.main__info__opening{
+    margin: 0 10px;
+}
+
+.main__info__permissibleAge{
+    background-color: #46d369;
+    color: #fff;
+    font-weight: 800;
+    border-radius: 2px;
+    margin: 0 10px;
+    padding: 2px;
+    
+}
+.main__story{
+    margin: 30px 10px;
+    line-height: 22px
+}
+.main__creator , .main__castMembers{
+    margin: 5px 10px;
+}
+.main__creator span:first-child, .main__castMembers span:first-child{
+    color: #bcbcbc;
+}
+footer{
+    margin:50px 10px 10px 10px;
+}
+.footer__title{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 25px;
+    color: #bcbcbc;
+}
+.footer__underline{
+    height: 1px;
+    background-color: #fff;
+    margin-top: 5px;
+}
