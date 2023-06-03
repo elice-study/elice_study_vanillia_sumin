@@ -10,7 +10,6 @@ body{
     background-color: #141414;
     opacity: 0.8;
 }
-
 header{
     width: 100%;
     height: 400px;
@@ -24,11 +23,11 @@ header{
 .header__close{
     display: flex;
     justify-content: flex-end;
+    font-size:24px;
 }
 .header__close i{
     margin: 20px 10px 0 0;
 }
-
 .header__row{
     display: flex;
     justify-content: flex-start;
@@ -48,17 +47,14 @@ header{
     height: 30px;
     margin-left: 10px;
     margin-top:20px;
-    
+    font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .header__row__heart i{
     margin-right: 2px;
-    
 }
-
-
 .main__info{
     display: flex;
     box-sizing: border-box;
@@ -70,24 +66,26 @@ header{
     color: #bcbcbc;
 }
 .main__info__opening{
-    margin: 0 10px;
+    margin: 0 12px 0 10px;
 }
-
 .main__info__permissibleAge{
     background-color: #46d369;
     color: #fff;
     font-weight: 800;
     border-radius: 2px;
-    margin: 0 10px;
+    margin: 0 12px;
     padding: 2px;
-    
 }
 .main__story{
     margin: 30px 10px;
-    line-height: 22px
+    line-height: 22px;
+}
+.main__story span, .main__creator span{
+    font-size: 16px;
 }
 .main__creator , .main__castMembers{
     margin: 5px 10px;
+    font-size: 16px;
 }
 .main__creator span:first-child, .main__castMembers span:first-child{
     color: #bcbcbc;
@@ -104,4 +102,89 @@ footer{
     height: 1px;
     background-color: #fff;
     margin-top: 5px;
+}
+
+@media all and (max-width:1440px){
+body{
+    margin: 3.47vw 20%;
+    min-height: 100vh;
+}
+
+header{
+    height: 27.78vw;
+    border-top-left-radius: 0.21vw;
+    border-top-right-radius: 0.21vw;
+}
+
+.header__close i{
+    margin: 1.39vw 0.69vw 0 0;
+}
+
+.header__row{
+    margin-top: 19.44vw;
+    margin-left: 4.17vw;
+}
+.header__row__title{
+    font-size: 3.47vw;
+}
+.header__row__heart{
+    border: solid 0.07vw #fff;
+    border-radius: 0.69vw;
+    font-size: 1.25vw;
+    width: 4.17vw;
+    height: 2.08vw;
+    margin-left: 0.69vw;
+    margin-top:1.39vw;
+}
+
+.header__row__heart i{
+    margin-right: 0.14vw;
+    
+}
+
+.main__info{
+    margin: 0.69vw 0;
+    height: 2.08vw;
+    font-size: 1.39vw;
+}
+
+.main__info__opening{
+    margin: 0 0.83vw 0 0.69vw;
+}
+
+.main__info__permissibleAge{
+    font-weight: 800;
+    border-radius: 0.14vw;
+    margin: 0 0.83vw;
+    padding: 0.14vw;
+}
+.main__story{
+    margin: 2.08vw 0.69vw;
+    line-height: 1.53vw
+}
+
+.main__story span, .main__creator span{
+    font-size: 1.11vw;
+}
+.main__creator , .main__castMembers{
+    margin: 0.35vw 0.69vw;
+    font-size: 1.11vw;
+}
+
+
+footer{
+    margin:3.47vw 0.69vw 0.69vw 0.69vw;
+}
+.footer__title{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 1.74vw;
+}
+.footer__underline{
+    height: 0.07vw;
+    margin-top: 0.35vw;
+}
+.header__close{
+    font-size:1.67vw;
+}
+
 }
