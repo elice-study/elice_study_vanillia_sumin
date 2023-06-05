@@ -26,7 +26,7 @@ const modal = `
   
   <div class="header__row__heart">
     <i class="fa-regular fa-heart fa-sm"></i>
-    <span>99</span>
+    <span class="header__row__heartCount">31</span>
   </div>
 </div>
 </header>
@@ -68,6 +68,11 @@ crossorigin="anonymous"
 `;
 
 
+
+
+
+
+
 const scrollLock = ()=>{
     document.body.style.overflow = 'hidden';
     
@@ -76,12 +81,6 @@ const scrollOn = ()=>{
     document.body.style.overflow = 'unset';
 }
 
-
-//background-image 바꾸는 메소드
-// const changeImg = ()=>{
-//     const bgImg = document.querySelector('.modal__layout__body header');
-//     bgImg.setAttribute('background-image',`${movieImg}`);
-// }
 
 const openModal = document.querySelectorAll(".movies div");
 openModal.forEach((El)=>El.addEventListener('click',function(){
@@ -95,7 +94,32 @@ openModal.forEach((El)=>El.addEventListener('click',function(){
     window.scrollTo({top:0});
     scrollLock();
 
+    //heart click
+    const heart = document.querySelector('.header__row__heart i');
+    heart.addEventListener('click',function(){
+      const heartFull = document.createElement('i');
+      heartFull.className = "fa-solid fa-heart fa-sm cliked";
+      heartFull.style.color = "#fff";
+      heart.before(heartFull);
+      heart.remove();
+
+      //heart-count
+      const heartCountEl = document.querySelector('.header__row__heartCount');
+      let heartCount=(heartCountEl.innerText)/1;
+      heartCountEl.innerText=heartCount+1;
+    });
+    //heartFull click
+    // const heartFull = document.querySelector(".fa-solid fa-heart fa-sm cliked");
+    // heartFull.addEventListener('click',function(){
+    //   const heart = document.createElement('i');
+    //   heart.className = "fa-regular fa-heart fa-sm";
+    //   heart.style.color = "#bcbcbc";
+    //   heartFull.before(heart);
+    //   heartFull.remove();
+    // });
+
     
+
     
     //title 넣기
     //1.span 생성해서 className설정한다
@@ -129,6 +153,5 @@ openModal.forEach((El)=>El.addEventListener('click',function(){
     scrollOn();
     })
 }));
-
 
 
