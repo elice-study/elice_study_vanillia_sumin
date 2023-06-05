@@ -25,7 +25,7 @@ const modal = `
 <div class="header__row">
   
   <div class="header__row__heart">
-    <i class="fa-regular fa-heart fa-lg"></i>
+    <i class="fa-regular fa-heart fa-sm"></i>
     <span>99</span>
   </div>
 </div>
@@ -67,6 +67,7 @@ crossorigin="anonymous"
 </div>
 `;
 
+
 const scrollLock = ()=>{
     document.body.style.overflow = 'hidden';
     
@@ -91,6 +92,7 @@ openModal.forEach((El)=>El.addEventListener('click',function(){
     document.body.prepend(modalEl);
     
     //modal open시 스크롤방지
+    window.scrollTo({top:0});
     scrollLock();
 
     
