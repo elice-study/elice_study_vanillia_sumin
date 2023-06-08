@@ -1,20 +1,19 @@
 const imgArr = [];
-const titleArr=[];
+const titleArr = [];
 //json data
 fetch("./dummy.json")
-.then(function(response) {
-return response.json();
-})
-.then(function(myJson) {
-const toJson=JSON.stringify(myJson);
-const toObj = JSON.parse(toJson);
-console.log(toObj[1].title);
-toObj.forEach((El)=>{
-    titleArr.push(El.title);
-    imgArr.push(El.posterImageFileName);
-})
-
-});   
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (myJson) {
+    const toJson = JSON.stringify(myJson);
+    const toObj = JSON.parse(toJson);
+    console.log(toObj[1].title);
+    toObj.forEach((El) => {
+      titleArr.push(El.title);
+      imgArr.push(El.posterImageFileName);
+    });
+  });
 
 const modal = `
 <div class="modal__layout__body">
@@ -67,46 +66,39 @@ crossorigin="anonymous"
 </div>
 `;
 
-
-
-
-
-
-
-const scrollLock = ()=>{
-    document.body.style.overflow = 'hidden';
-    
-}
-const scrollOn = ()=>{
-    document.body.style.overflow = 'unset';
-}
-
+const scrollLock = () => {
+  document.body.style.overflow = "hidden";
+};
+const scrollOn = () => {
+  document.body.style.overflow = "unset";
+};
 
 const openModal = document.querySelectorAll(".movies div");
-openModal.forEach((El)=>El.addEventListener('click',function(){
+openModal.forEach((El) =>
+  El.addEventListener("click", function () {
     //modal
-    const modalEl = document.createElement('div');
-    modalEl.setAttribute('class','modal__layout');
+    const modalEl = document.createElement("div");
+    modalEl.setAttribute("class", "modal__layout");
     modalEl.innerHTML = modal;
     document.body.prepend(modalEl);
-    
+
     //modal open시 스크롤방지
-    window.scrollTo({top:0});
+    window.scrollTo({ top: 0 });
     scrollLock();
 
     //heart click
-    const heart = document.querySelector('.header__row__heart i');
-    heart.addEventListener('click',function(){
-      const heartFull = document.createElement('i');
+    const heart = document.querySelector(".header__row__heart i");
+    heart.addEventListener("click", function () {
+      const heartFull = document.createElement("i");
       heartFull.className = "fa-solid fa-heart fa-sm cliked";
       heartFull.style.color = "#fff";
       heart.before(heartFull);
       heart.remove();
 
       //heart-count
-      const heartCountEl = document.querySelector('.header__row__heartCount');
-      let heartCount=(heartCountEl.innerText)/1;
-      heartCountEl.innerText=heartCount+1;
+      const heartCountEl = document.querySelector(".header__row__heartCount");
+      let heartCount = heartCountEl.innerText / 1;
+      heartCountEl.innerText = heartCount + 1;
     });
     //heartFull click
     // const heartFull = document.querySelector(".fa-solid fa-heart fa-sm cliked");
@@ -118,40 +110,34 @@ openModal.forEach((El)=>El.addEventListener('click',function(){
     //   heartFull.remove();
     // });
 
-    
-
-    
     //title 넣기
     //1.span 생성해서 className설정한다
     //2.클릭한 객체의 className에서 index값 찾기
     //3.index에 맞는 title 값 찾아서 innerText로 넣어준다.
     //4.맞는 위치에 넣기
-    const titleEl = document.createElement('span');
-    titleEl.setAttribute('class','header__row__title');
-    const header_row=document.querySelector('.header__row');
+    const titleEl = document.createElement("span");
+    titleEl.setAttribute("class", "header__row__title");
+    const header_row = document.querySelector(".header__row");
     const titleNodes = [...this.parentElement.children];
     const index = titleNodes.indexOf(this);
-    titleEl.innerText =titleArr[index];
+    titleEl.innerText = titleArr[index];
     header_row.prepend(titleEl);
     console.log(index);
 
-
-
     //modal bg-img 바꾸기
-    const bgImg = document.querySelector('.modal__layout__body > header');
-    
+    const bgImg = document.querySelector(".modal__layout__body > header");
+
     const imgURL = imgArr[index];
     bgImg.style.backgroundImage = `url(../img/${imgURL})`;
 
-
     //close 클릭시 modal 닫힘
-    document.querySelector('.header__close > i')
-    .addEventListener('click',function(){
+    document
+      .querySelector(".header__close > i")
+      .addEventListener("click", function () {
         document.body.removeChild(modalEl);
 
-    //modal 닫히면 스크롤 복귀    
-    scrollOn();
-    })
-}));
-
-
+        //modal 닫히면 스크롤 복귀
+        scrollOn();
+      });
+  })
+);
