@@ -1,19 +1,34 @@
 const imgArr = [];
 const titleArr = [];
 //json data
-fetch("./dummy.json")
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (myJson) {
-    const toJson = JSON.stringify(myJson);
-    const toObj = JSON.parse(toJson);
-    console.log(toObj[1].title);
-    toObj.forEach((El) => {
-      titleArr.push(El.title);
-      imgArr.push(El.posterImageFileName);
-    });
+async function findData(e) {
+  const res = await fetch("./dummy.json");
+  const datas = await res.json();
+  //e.target이 왜 안될까요..
+  const movieNumber = e.target.className.split("_");
+  const imgData = datas.find((data) => {
+    data.movieId === movieNumber[1];
   });
+  console.log(imgData);
+  const bgImg = document.querySelector(".modal__layout__body > header");
+
+  const imgURL = imgData.posterImageFileName;
+  bgImg.style.backgroundImage = `url(../img/${imgURL})`;
+}
+
+// fetch("./dummy.json")
+//   .then(function (response) {
+//     return response.json();
+//   })
+//   .then(function (myJson) {
+//     const toJson = JSON.stringify(myJson);
+//     const toObj = JSON.parse(toJson);
+//     console.log(toObj[1].title);
+//     toObj.forEach((El) => {
+//       titleArr.push(El.title);
+//       imgArr.push(El.posterImageFileName);
+//     });
+//   });
 
 const modal = `
 <div class="modal__layout__body">
@@ -125,10 +140,11 @@ openModal.forEach((El) =>
     console.log(index);
 
     //modal bg-img 바꾸기
-    const bgImg = document.querySelector(".modal__layout__body > header");
+    // const bgImg = document.querySelector(".modal__layout__body > header");
 
-    const imgURL = imgArr[index];
-    bgImg.style.backgroundImage = `url(../img/${imgURL})`;
+    // const imgURL = imgArr[index];
+    // bgImg.style.backgroundImage = `url(../img/${imgURL})`;
+    findData();
 
     //close 클릭시 modal 닫힘
     document
