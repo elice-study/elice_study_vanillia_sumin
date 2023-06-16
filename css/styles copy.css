@@ -7,17 +7,19 @@ body {
   color: #fff;
   font-family: "Noto Sans KR", sans-serif;
   font-family: "Open Sans", sans-serif;
-  margin: 35px;
+
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
+  box-sizing: border-box;
 }
 .header {
-  width: 100%;
+  padding: 2px;
   height: 130px;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-sizing: border-box;
-  border: 1px solid red;
 }
 .header__title {
   height: 50px;
@@ -56,13 +58,11 @@ body {
 }
 
 .nav {
-  width: 100%;
+  padding: 2px;
+  margin-bottom: 2px;
   height: 30px;
-  margin: 5px 0;
 
   display: flex;
-  box-sizing: border-box;
-  border: 1px solid red;
 }
 .nav__company {
   margin-right: 5px;
@@ -97,16 +97,13 @@ body {
   color: black;
 }
 .movies {
-  width: 100%;
-  display: grid;
-
-  grid-template-columns: repeat(4, 1fr);
-  gap: 50px 5px;
-
-  /* box-sizing: border-box; */
-  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .movies div {
+  padding: 2px;
+  margin-bottom: 50px;
   cursor: pointer;
 }
 .movies div img {
@@ -260,29 +257,4 @@ body {
   height: 1px;
   background-color: #fff;
   margin-top: 5px;
-}
-
-@media (max-width: 1199px) {
-  movies {
-    grid-template-columns: repeat(4, 1fr);
-    width: 75%;
-  }
-}
-@media (max-width: 991px) {
-  movies {
-    grid-template-columns: repeat(3, 1fr);
-    width: 70%;
-  }
-}
-@media (max-width: 767px) {
-  movies {
-    grid-template-columns: repeat(2, 1fr);
-    width: 65%;
-  }
-}
-@media (max-width: 575px) {
-  movies {
-    grid-template-columns: repeat(1, 1fr);
-    width: 60%;
-  }
 }
