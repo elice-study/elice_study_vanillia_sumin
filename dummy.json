@@ -1,216 +1,162 @@
-
-    [
-            {
-                "movieId": 1,
-                "posterImageFileName": "movie_1.jpg",
-                "title": "마녀 배달부 키키",
-                "permissibleAge": "ALL",
-                "runningTimeMinutes": 102,
-                "creator": "미야자키하야오",
-                "castMembers": [
-                    "타카야마 미나미",
-                    "사쿠마 레이"
-                ],
-                "description": "사랑스러운 초보마녀 ‘키키’는 검은 고양이 ‘지지’와 함께 빗자루를 타고 마녀 수련을 떠난다. 항구 마을에 불시착한 키키는 첫날부터 우여곡절을 겪지만, ‘배달’에 재능이 있다는 걸 발견하고 본격적인 마법 수련을 시작하는데…"
-            },
-            {
-                "movieId": 2,
-                "posterImageFileName": "movie_2.jpg",
-                "title": "고양이의 보은",
-                "permissibleAge": "ALL",
-                "runningTimeMinutes": 102,
-                "creator": "미야자키하야오",
-                "castMembers": [
-                    "타카야마 미나미",
-                    "사쿠마 레이"
-                ],
-                "description": "사랑스러운 초보마녀 ‘키키’는 검은 고양이 ‘지지’와 함께 빗자루를 타고 마녀 수련을 떠난다. 항구 마을에 불시착한 키키는 첫날부터 우여곡절을 겪지만, ‘배달’에 재능이 있다는 걸 발견하고 본격적인 마법 수련을 시작하는데…"
-            },
-            {
-                "movieId": 3,
-                "posterImageFileName": "movie_3.jpg",
-                "title": "귀를 기울이면",
-                "permissibleAge": "ALL",
-                "runningTimeMinutes": 102,
-                "creator": "미야자키하야오",
-                "castMembers": [
-                    "타카야마 미나미",
-                    "사쿠마 레이"
-                ],
-                "description": "사랑스러운 초보마녀 ‘키키’는 검은 고양이 ‘지지’와 함께 빗자루를 타고 마녀 수련을 떠난다. 항구 마을에 불시착한 키키는 첫날부터 우여곡절을 겪지만, ‘배달’에 재능이 있다는 걸 발견하고 본격적인 마법 수련을 시작하는데…"
-            },
-            {
-                "movieId": 4,
-                "posterImageFileName": "movie_4.jpg",
-                "title": "마루 밑 아리에티",
-                "permissibleAge": "ALL",
-                "runningTimeMinutes": 102,
-                "creator": "미야자키하야오",
-                "castMembers": [
-                    "타카야마 미나미",
-                    "사쿠마 레이"
-                ],
-                "description": "사랑스러운 초보마녀 ‘키키’는 검은 고양이 ‘지지’와 함께 빗자루를 타고 마녀 수련을 떠난다. 항구 마을에 불시착한 키키는 첫날부터 우여곡절을 겪지만, ‘배달’에 재능이 있다는 걸 발견하고 본격적인 마법 수련을 시작하는데…"
-            },
-            {
-                "movieId": 5,
-                "posterImageFileName": "movie_5.jpg",
-                "title": "센과 치히로의 행방불명",
-                "permissibleAge": "ALL",
-                "runningTimeMinutes": 102,
-                "creator": "미야자키하야오",
-                "castMembers": [
-                    "타카야마 미나미",
-                    "사쿠마 레이"
-                ],
-                "description": "사랑스러운 초보마녀 ‘키키’는 검은 고양이 ‘지지’와 함께 빗자루를 타고 마녀 수련을 떠난다. 항구 마을에 불시착한 키키는 첫날부터 우여곡절을 겪지만, ‘배달’에 재능이 있다는 걸 발견하고 본격적인 마법 수련을 시작하는데…"
-            },
-            {
-                "movieId": 6,
-                "posterImageFileName": "movie_6.jpg",
-                "title": "하울의 움직이는 성",
-                "permissibleAge": "ALL",
-                "runningTimeMinutes": 102,
-                "creator": "미야자키하야오",
-                "castMembers": [
-                    "타카야마 미나미",
-                    "사쿠마 레이"
-                ],
-                "description": "사랑스러운 초보마녀 ‘키키’는 검은 고양이 ‘지지’와 함께 빗자루를 타고 마녀 수련을 떠난다. 항구 마을에 불시착한 키키는 첫날부터 우여곡절을 겪지만, ‘배달’에 재능이 있다는 걸 발견하고 본격적인 마법 수련을 시작하는데…"
-            },
-            {
-                "movieId": 7,
-                "posterImageFileName": "movie_7.jpg",
-                "title": "벼랑 위의 포뇨",
-                "permissibleAge": "ALL",
-                "runningTimeMinutes": 102,
-                "creator": "미야자키하야오",
-                "castMembers": [
-                    "타카야마 미나미",
-                    "사쿠마 레이"
-                ],
-                "description": "사랑스러운 초보마녀 ‘키키’는 검은 고양이 ‘지지’와 함께 빗자루를 타고 마녀 수련을 떠난다. 항구 마을에 불시착한 키키는 첫날부터 우여곡절을 겪지만, ‘배달’에 재능이 있다는 걸 발견하고 본격적인 마법 수련을 시작하는데…"
-            },
-            {
-                "movieId": 8,
-                "posterImageFileName": "movie_8.jpg",
-                "title": "모노노케 히메",
-                "permissibleAge": "ALL",
-                "runningTimeMinutes": 102,
-                "creator": "미야자키하야오",
-                "castMembers": [
-                    "타카야마 미나미",
-                    "사쿠마 레이"
-                ],
-                "description": "사랑스러운 초보마녀 ‘키키’는 검은 고양이 ‘지지’와 함께 빗자루를 타고 마녀 수련을 떠난다. 항구 마을에 불시착한 키키는 첫날부터 우여곡절을 겪지만, ‘배달’에 재능이 있다는 걸 발견하고 본격적인 마법 수련을 시작하는데…"
-            },
-            {
-                "movieId": 9,
-                "posterImageFileName": "movie_9.jpg",
-                "title": "바다가 들린다",
-                "permissibleAge": "ALL",
-                "runningTimeMinutes": 102,
-                "creator": "미야자키하야오",
-                "castMembers": [
-                    "타카야마 미나미",
-                    "사쿠마 레이"
-                ],
-                "description": "사랑스러운 초보마녀 ‘키키’는 검은 고양이 ‘지지’와 함께 빗자루를 타고 마녀 수련을 떠난다. 항구 마을에 불시착한 키키는 첫날부터 우여곡절을 겪지만, ‘배달’에 재능이 있다는 걸 발견하고 본격적인 마법 수련을 시작하는데…"
-            },
-            {
-                "movieId": 10,
-                "posterImageFileName": "movie_10.jpg",
-                "title": "천공의 성 라퓨타",
-                "permissibleAge": "ALL",
-                "runningTimeMinutes": 102,
-                "creator": "미야자키하야오",
-                "castMembers": [
-                    "타카야마 미나미",
-                    "사쿠마 레이"
-                ],
-                "description": "사랑스러운 초보마녀 ‘키키’는 검은 고양이 ‘지지’와 함께 빗자루를 타고 마녀 수련을 떠난다. 항구 마을에 불시착한 키키는 첫날부터 우여곡절을 겪지만, ‘배달’에 재능이 있다는 걸 발견하고 본격적인 마법 수련을 시작하는데…"
-            },
-            {
-                "movieId": 11,
-                "posterImageFileName": "movie_11.jpg",
-                "title": "추억의 마니",
-                "permissibleAge": "ALL",
-                "runningTimeMinutes": 102,
-                "creator": "미야자키하야오",
-                "castMembers": [
-                    "타카야마 미나미",
-                    "사쿠마 레이"
-                ],
-                "description": "사랑스러운 초보마녀 ‘키키’는 검은 고양이 ‘지지’와 함께 빗자루를 타고 마녀 수련을 떠난다. 항구 마을에 불시착한 키키는 첫날부터 우여곡절을 겪지만, ‘배달’에 재능이 있다는 걸 발견하고 본격적인 마법 수련을 시작하는데…"
-            },
-            {
-                "movieId": 12,
-                "posterImageFileName": "movie_12.jpg",
-                "title": "붉은 돼지",
-                "permissibleAge": "ALL",
-                "runningTimeMinutes": 102,
-                "creator": "미야자키하야오",
-                "castMembers": [
-                    "타카야마 미나미",
-                    "사쿠마 레이"
-                ],
-                "description": "사랑스러운 초보마녀 ‘키키’는 검은 고양이 ‘지지’와 함께 빗자루를 타고 마녀 수련을 떠난다. 항구 마을에 불시착한 키키는 첫날부터 우여곡절을 겪지만, ‘배달’에 재능이 있다는 걸 발견하고 본격적인 마법 수련을 시작하는데…"
-            },
-            {
-                "movieId": 13,
-                "posterImageFileName": "movie_13.jpg",
-                "title": "폼포코 너구리 대작전",
-                "permissibleAge": "ALL",
-                "runningTimeMinutes": 102,
-                "creator": "미야자키하야오",
-                "castMembers": [
-                    "타카야마 미나미",
-                    "사쿠마 레이"
-                ],
-                "description": "사랑스러운 초보마녀 ‘키키’는 검은 고양이 ‘지지’와 함께 빗자루를 타고 마녀 수련을 떠난다. 항구 마을에 불시착한 키키는 첫날부터 우여곡절을 겪지만, ‘배달’에 재능이 있다는 걸 발견하고 본격적인 마법 수련을 시작하는데…"
-            },
-            {
-                "movieId": 14,
-                "posterImageFileName": "movie_14.jpg",
-                "title": "가구야 공주 이야기",
-                "permissibleAge": "ALL",
-                "runningTimeMinutes": 102,
-                "creator": "미야자키하야오",
-                "castMembers": [
-                    "타카야마 미나미",
-                    "사쿠마 레이"
-                ],
-                "description": "사랑스러운 초보마녀 ‘키키’는 검은 고양이 ‘지지’와 함께 빗자루를 타고 마녀 수련을 떠난다. 항구 마을에 불시착한 키키는 첫날부터 우여곡절을 겪지만, ‘배달’에 재능이 있다는 걸 발견하고 본격적인 마법 수련을 시작하는데…"
-            },
-            {
-                "movieId": 15,
-                "posterImageFileName": "movie_15.jpg",
-                "title": "바람계곡의 나우시카",
-                "permissibleAge": "ALL",
-                "runningTimeMinutes": 102,
-                "creator": "미야자키하야오",
-                "castMembers": [
-                    "타카야마 미나미",
-                    "사쿠마 레이"
-                ],
-                "description": "사랑스러운 초보마녀 ‘키키’는 검은 고양이 ‘지지’와 함께 빗자루를 타고 마녀 수련을 떠난다. 항구 마을에 불시착한 키키는 첫날부터 우여곡절을 겪지만, ‘배달’에 재능이 있다는 걸 발견하고 본격적인 마법 수련을 시작하는데…"
-            },
-            {
-                "movieId": 16,
-                "posterImageFileName": "movie_16.jpg",
-                "title": "추억은 방울방울",
-                "permissibleAge": "ALL",
-                "runningTimeMinutes": 102,
-                "creator": "미야자키하야오",
-                "castMembers": [
-                    "타카야마 미나미",
-                    "사쿠마 레이"
-                ],
-                "description": "사랑스러운 초보마녀 ‘키키’는 검은 고양이 ‘지지’와 함께 빗자루를 타고 마녀 수련을 떠난다. 항구 마을에 불시착한 키키는 첫날부터 우여곡절을 겪지만, ‘배달’에 재능이 있다는 걸 발견하고 본격적인 마법 수련을 시작하는데…"
-            }
-            
-        ]
-    
-       
-
-
+[
+  {
+    "movieId": 1,
+    "posterImageFileName": "movie_1.jpg",
+    "title": "마녀 배달부 키키",
+    "permissibleAge": "ALL",
+    "runningTimeMinutes": 102,
+    "creator": "미야자키하야오",
+    "castMembers": ["타카야마 미나미", "사쿠마 레이"],
+    "description": "사랑스러운 초보마녀 ‘키키’는 검은 고양이 ‘지지’와 함께 빗자루를 타고 마녀 수련을 떠난다. 항구 마을에 불시착한 키키는 첫날부터 우여곡절을 겪지만, ‘배달’에 재능이 있다는 걸 발견하고 본격적인 마법 수련을 시작하는데…"
+  },
+  {
+    "movieId": 2,
+    "posterImageFileName": "movie_2.jpg",
+    "title": "고양이의 보은",
+    "permissibleAge": "ALL",
+    "runningTimeMinutes": 102,
+    "creator": "미야자키하야오",
+    "castMembers": ["타카야마 미나미", "사쿠마 레이"],
+    "description": "사랑스러운 초보마녀 ‘키키’는 검은 고양이 ‘지지’와 함께 빗자루를 타고 마녀 수련을 떠난다. 항구 마을에 불시착한 키키는 첫날부터 우여곡절을 겪지만, ‘배달’에 재능이 있다는 걸 발견하고 본격적인 마법 수련을 시작하는데…"
+  },
+  {
+    "movieId": 3,
+    "posterImageFileName": "movie_3.jpg",
+    "title": "귀를 기울이면",
+    "permissibleAge": "ALL",
+    "runningTimeMinutes": 102,
+    "creator": "미야자키하야오",
+    "castMembers": ["타카야마 미나미", "사쿠마 레이"],
+    "description": "사랑스러운 초보마녀 ‘키키’는 검은 고양이 ‘지지’와 함께 빗자루를 타고 마녀 수련을 떠난다. 항구 마을에 불시착한 키키는 첫날부터 우여곡절을 겪지만, ‘배달’에 재능이 있다는 걸 발견하고 본격적인 마법 수련을 시작하는데…"
+  },
+  {
+    "movieId": 4,
+    "posterImageFileName": "movie_4.jpg",
+    "title": "마루 밑 아리에티",
+    "permissibleAge": "ALL",
+    "runningTimeMinutes": 102,
+    "creator": "미야자키하야오",
+    "castMembers": ["타카야마 미나미", "사쿠마 레이"],
+    "description": "사랑스러운 초보마녀 ‘키키’는 검은 고양이 ‘지지’와 함께 빗자루를 타고 마녀 수련을 떠난다. 항구 마을에 불시착한 키키는 첫날부터 우여곡절을 겪지만, ‘배달’에 재능이 있다는 걸 발견하고 본격적인 마법 수련을 시작하는데…"
+  },
+  {
+    "movieId": 5,
+    "posterImageFileName": "movie_5.jpg",
+    "title": "센과 치히로의 행방불명",
+    "permissibleAge": "ALL",
+    "runningTimeMinutes": 102,
+    "creator": "미야자키하야오",
+    "castMembers": ["타카야마 미나미", "사쿠마 레이"],
+    "description": "사랑스러운 초보마녀 ‘키키’는 검은 고양이 ‘지지’와 함께 빗자루를 타고 마녀 수련을 떠난다. 항구 마을에 불시착한 키키는 첫날부터 우여곡절을 겪지만, ‘배달’에 재능이 있다는 걸 발견하고 본격적인 마법 수련을 시작하는데…"
+  },
+  {
+    "movieId": 6,
+    "posterImageFileName": "movie_6.jpg",
+    "title": "하울의 움직이는 성",
+    "permissibleAge": "ALL",
+    "runningTimeMinutes": 102,
+    "creator": "미야자키하야오",
+    "castMembers": ["타카야마 미나미", "사쿠마 레이"],
+    "description": "사랑스러운 초보마녀 ‘키키’는 검은 고양이 ‘지지’와 함께 빗자루를 타고 마녀 수련을 떠난다. 항구 마을에 불시착한 키키는 첫날부터 우여곡절을 겪지만, ‘배달’에 재능이 있다는 걸 발견하고 본격적인 마법 수련을 시작하는데…"
+  },
+  {
+    "movieId": 7,
+    "posterImageFileName": "movie_7.jpg",
+    "title": "벼랑 위의 포뇨",
+    "permissibleAge": "ALL",
+    "runningTimeMinutes": 102,
+    "creator": "미야자키하야오",
+    "castMembers": ["타카야마 미나미", "사쿠마 레이"],
+    "description": "사랑스러운 초보마녀 ‘키키’는 검은 고양이 ‘지지’와 함께 빗자루를 타고 마녀 수련을 떠난다. 항구 마을에 불시착한 키키는 첫날부터 우여곡절을 겪지만, ‘배달’에 재능이 있다는 걸 발견하고 본격적인 마법 수련을 시작하는데…"
+  },
+  {
+    "movieId": 8,
+    "posterImageFileName": "movie_8.jpg",
+    "title": "모노노케 히메",
+    "permissibleAge": "ALL",
+    "runningTimeMinutes": 102,
+    "creator": "미야자키하야오",
+    "castMembers": ["타카야마 미나미", "사쿠마 레이"],
+    "description": "사랑스러운 초보마녀 ‘키키’는 검은 고양이 ‘지지’와 함께 빗자루를 타고 마녀 수련을 떠난다. 항구 마을에 불시착한 키키는 첫날부터 우여곡절을 겪지만, ‘배달’에 재능이 있다는 걸 발견하고 본격적인 마법 수련을 시작하는데…"
+  },
+  {
+    "movieId": 9,
+    "posterImageFileName": "movie_9.jpg",
+    "title": "바다가 들린다",
+    "permissibleAge": "ALL",
+    "runningTimeMinutes": 102,
+    "creator": "미야자키하야오",
+    "castMembers": ["타카야마 미나미", "사쿠마 레이"],
+    "description": "사랑스러운 초보마녀 ‘키키’는 검은 고양이 ‘지지’와 함께 빗자루를 타고 마녀 수련을 떠난다. 항구 마을에 불시착한 키키는 첫날부터 우여곡절을 겪지만, ‘배달’에 재능이 있다는 걸 발견하고 본격적인 마법 수련을 시작하는데…"
+  },
+  {
+    "movieId": 10,
+    "posterImageFileName": "movie_10.jpg",
+    "title": "천공의 성 라퓨타",
+    "permissibleAge": "ALL",
+    "runningTimeMinutes": 102,
+    "creator": "미야자키하야오",
+    "castMembers": ["타카야마 미나미", "사쿠마 레이"],
+    "description": "사랑스러운 초보마녀 ‘키키’는 검은 고양이 ‘지지’와 함께 빗자루를 타고 마녀 수련을 떠난다. 항구 마을에 불시착한 키키는 첫날부터 우여곡절을 겪지만, ‘배달’에 재능이 있다는 걸 발견하고 본격적인 마법 수련을 시작하는데…"
+  },
+  {
+    "movieId": 11,
+    "posterImageFileName": "movie_11.jpg",
+    "title": "추억의 마니",
+    "permissibleAge": "ALL",
+    "runningTimeMinutes": 102,
+    "creator": "미야자키하야오",
+    "castMembers": ["타카야마 미나미", "사쿠마 레이"],
+    "description": "사랑스러운 초보마녀 ‘키키’는 검은 고양이 ‘지지’와 함께 빗자루를 타고 마녀 수련을 떠난다. 항구 마을에 불시착한 키키는 첫날부터 우여곡절을 겪지만, ‘배달’에 재능이 있다는 걸 발견하고 본격적인 마법 수련을 시작하는데…"
+  },
+  {
+    "movieId": 12,
+    "posterImageFileName": "movie_12.jpg",
+    "title": "붉은 돼지",
+    "permissibleAge": "ALL",
+    "runningTimeMinutes": 102,
+    "creator": "미야자키하야오",
+    "castMembers": ["타카야마 미나미", "사쿠마 레이"],
+    "description": "사랑스러운 초보마녀 ‘키키’는 검은 고양이 ‘지지’와 함께 빗자루를 타고 마녀 수련을 떠난다. 항구 마을에 불시착한 키키는 첫날부터 우여곡절을 겪지만, ‘배달’에 재능이 있다는 걸 발견하고 본격적인 마법 수련을 시작하는데…"
+  },
+  {
+    "movieId": 13,
+    "posterImageFileName": "movie_13.jpg",
+    "title": "폼포코 너구리 대작전",
+    "permissibleAge": "ALL",
+    "runningTimeMinutes": 102,
+    "creator": "미야자키하야오",
+    "castMembers": ["타카야마 미나미", "사쿠마 레이"],
+    "description": "사랑스러운 초보마녀 ‘키키’는 검은 고양이 ‘지지’와 함께 빗자루를 타고 마녀 수련을 떠난다. 항구 마을에 불시착한 키키는 첫날부터 우여곡절을 겪지만, ‘배달’에 재능이 있다는 걸 발견하고 본격적인 마법 수련을 시작하는데…"
+  },
+  {
+    "movieId": 14,
+    "posterImageFileName": "movie_14.jpg",
+    "title": "가구야 공주 이야기",
+    "permissibleAge": "ALL",
+    "runningTimeMinutes": 102,
+    "creator": "미야자키하야오",
+    "castMembers": ["타카야마 미나미", "사쿠마 레이"],
+    "description": "사랑스러운 초보마녀 ‘키키’는 검은 고양이 ‘지지’와 함께 빗자루를 타고 마녀 수련을 떠난다. 항구 마을에 불시착한 키키는 첫날부터 우여곡절을 겪지만, ‘배달’에 재능이 있다는 걸 발견하고 본격적인 마법 수련을 시작하는데…"
+  },
+  {
+    "movieId": 15,
+    "posterImageFileName": "movie_15.jpg",
+    "title": "바람계곡의 나우시카",
+    "permissibleAge": "ALL",
+    "runningTimeMinutes": 102,
+    "creator": "미야자키하야오",
+    "castMembers": ["타카야마 미나미", "사쿠마 레이"],
+    "description": "사랑스러운 초보마녀 ‘키키’는 검은 고양이 ‘지지’와 함께 빗자루를 타고 마녀 수련을 떠난다. 항구 마을에 불시착한 키키는 첫날부터 우여곡절을 겪지만, ‘배달’에 재능이 있다는 걸 발견하고 본격적인 마법 수련을 시작하는데…"
+  },
+  {
+    "movieId": 16,
+    "posterImageFileName": "movie_16.jpg",
+    "title": "추억은 방울방울",
+    "permissibleAge": "ALL",
+    "runningTimeMinutes": 102,
+    "creator": "미야자키하야오",
+    "castMembers": ["타카야마 미나미", "사쿠마 레이"],
+    "description": "사랑스러운 초보마녀 ‘키키’는 검은 고양이 ‘지지’와 함께 빗자루를 타고 마녀 수련을 떠난다. 항구 마을에 불시착한 키키는 첫날부터 우여곡절을 겪지만, ‘배달’에 재능이 있다는 걸 발견하고 본격적인 마법 수련을 시작하는데…"
+  }
+]

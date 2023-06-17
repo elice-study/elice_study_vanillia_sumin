@@ -2,33 +2,19 @@ const imgArr = [];
 const titleArr = [];
 //json data
 async function findData(e) {
+  console.log(e);
   const res = await fetch("./dummy.json");
   const datas = await res.json();
-  //e.target이 왜 안될까요..
-  const movieNumber = e.target.className.split("_");
-  const imgData = datas.find((data) => {
-    data.movieId === movieNumber[1];
-  });
+
+  const movieNumber = e.target.id.split("_");
+  const imgData = datas[+movieNumber[1] - 1];
+
   console.log(imgData);
   const bgImg = document.querySelector(".modal__layout__body > header");
 
   const imgURL = imgData.posterImageFileName;
   bgImg.style.backgroundImage = `url(../img/${imgURL})`;
 }
-
-// fetch("./dummy.json")
-//   .then(function (response) {
-//     return response.json();
-//   })
-//   .then(function (myJson) {
-//     const toJson = JSON.stringify(myJson);
-//     const toObj = JSON.parse(toJson);
-//     console.log(toObj[1].title);
-//     toObj.forEach((El) => {
-//       titleArr.push(El.title);
-//       imgArr.push(El.posterImageFileName);
-//     });
-//   });
 
 const modal = `
 <div class="modal__layout__body">
@@ -90,7 +76,7 @@ const scrollOn = () => {
 
 const openModal = document.querySelectorAll(".movies div");
 openModal.forEach((El) =>
-  El.addEventListener("click", function () {
+  El.addEventListener("click", function (e) {
     //modal
     const modalEl = document.createElement("div");
     modalEl.setAttribute("class", "modal__layout");
@@ -144,7 +130,7 @@ openModal.forEach((El) =>
 
     // const imgURL = imgArr[index];
     // bgImg.style.backgroundImage = `url(../img/${imgURL})`;
-    findData();
+    findData(e);
 
     //close 클릭시 modal 닫힘
     document
