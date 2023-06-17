@@ -1,21 +1,24 @@
-const imgArr = [];
-const titleArr = [];
-//json data
+// json data
 async function findData(e) {
-  console.log(e);
   const res = await fetch("./dummy.json");
   const datas = await res.json();
 
+  //click의 target data
   const movieNumber = e.target.id.split("_");
-  const imgData = datas[+movieNumber[1] - 1];
-
-  console.log(imgData);
+  const data = datas[+movieNumber[1] - 1];
+  console.log(data);
+  //modal bgimg
   const bgImg = document.querySelector(".modal__layout__body > header");
 
-  const imgURL = imgData.posterImageFileName;
+  const imgURL = data.posterImageFileName;
   bgImg.style.backgroundImage = `url(../img/${imgURL})`;
+
+  //modal title
+  const modal_title = document.querySelector(".header__row__title");
+  modal_title.innerText = data.title;
 }
 
+//modal page
 const modal = `
 <div class="modal__layout__body">
 <header>
@@ -23,7 +26,7 @@ const modal = `
   <i class="fa-sharp fa-solid fa-circle-xmark fa-2xl"></i>
 </div>
 <div class="header__row">
-  
+  <span class="header__row__title"></span>
   <div class="header__row__heart">
     <i class="fa-regular fa-heart fa-sm"></i>
     <span class="header__row__heartCount">31</span>
@@ -77,6 +80,8 @@ const scrollOn = () => {
 const openModal = document.querySelectorAll(".movies div");
 openModal.forEach((El) =>
   El.addEventListener("click", function (e) {
+    findData(e);
+
     //modal
     const modalEl = document.createElement("div");
     modalEl.setAttribute("class", "modal__layout");
@@ -110,27 +115,6 @@ openModal.forEach((El) =>
     //   heartFull.before(heart);
     //   heartFull.remove();
     // });
-
-    //title 넣기
-    //1.span 생성해서 className설정한다
-    //2.클릭한 객체의 className에서 index값 찾기
-    //3.index에 맞는 title 값 찾아서 innerText로 넣어준다.
-    //4.맞는 위치에 넣기
-    const titleEl = document.createElement("span");
-    titleEl.setAttribute("class", "header__row__title");
-    const header_row = document.querySelector(".header__row");
-    const titleNodes = [...this.parentElement.children];
-    const index = titleNodes.indexOf(this);
-    titleEl.innerText = titleArr[index];
-    header_row.prepend(titleEl);
-    console.log(index);
-
-    //modal bg-img 바꾸기
-    // const bgImg = document.querySelector(".modal__layout__body > header");
-
-    // const imgURL = imgArr[index];
-    // bgImg.style.backgroundImage = `url(../img/${imgURL})`;
-    findData(e);
 
     //close 클릭시 modal 닫힘
     document
